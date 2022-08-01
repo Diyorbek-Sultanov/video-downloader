@@ -1,0 +1,35 @@
+.saver__content {
+	padding-top: 100px;
+}
+
+.nav-link[aria-current='page'] {
+	border-bottom: 2 solid red;
+}
+
+.wrapper {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: row;
+}
+
+.btn__my {
+	margin-left: 10px;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 10px;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: inherit;
+	background-color: red;
+	color: #fff;
+	border: none;
+	font-weight: 600;
+}
+
+.btn__my:hover {
+	background-color: gray;
+	color: #fff;
+}
