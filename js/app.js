@@ -43,14 +43,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	// Used jquery to make navlink active
 	$('[data-active]').on('click', function (event) {
-		event.preventDefault()
-
 		let navId = $(this).data('active')
 		let $this = $(this)
 
 		$('#my-nav a').removeClass('nav-active')
 		$this.addClass('nav-active')
-
-		console.log(navId)
 	})
 })
