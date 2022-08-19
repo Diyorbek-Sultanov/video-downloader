@@ -67,6 +67,23 @@ img {
 	display: none;
 }
 
+.nav__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.nav__logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.nav__logo h2 {
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+
 .emoji {
 	width: 150px;
 	height: 150px;
@@ -76,7 +93,7 @@ img {
 .saver__info {
 	width: 60%;
 	min-height: 100%;
-	margin: 40px auto 0;
+	margin: 50px auto;
 	padding: 15px 25px;
 	display: flex;
 	flex-direction: row;
