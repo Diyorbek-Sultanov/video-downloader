@@ -25,22 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	navLinks.forEach(link => link.addEventListener('click', navLink))
 
-	// Button loading
-	const button = document.querySelector('.button')
-	const submit = document.querySelector('.submit')
-
-	function toggleClass() {
-		this.classList.toggle('active')
-	}
-
-	function addClass() {
-		this.classList.add('finished')
-	}
-
-	button.addEventListener('click', toggleClass)
-	button.addEventListener('transitionend', toggleClass)
-	button.addEventListener('transitionend', addClass)
-
 	// Used jquery to make navlink active
 	$('[data-active]').on('click', function (event) {
 		let navId = $(this).data('active')
