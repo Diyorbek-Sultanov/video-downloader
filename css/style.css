@@ -187,7 +187,7 @@ select::-ms-expand {
 	justify-content: center;
 	width: 12.5rem;
 	margin: 0;
-	padding: 0.550rem 0.956rem;
+	padding: 0.55rem 0.956rem;
 	background-color: #3498db;
 	border: none;
 	border-radius: 0.3125rem;
@@ -195,6 +195,19 @@ select::-ms-expand {
 	color: white;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgb(126, 124, 124);
+	border-radius: 5px;
 }
 
 @media screen and (max-width: 1199px) {
