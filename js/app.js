@@ -25,12 +25,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	navLinks.forEach(link => link.addEventListener('click', navLink))
 
-	// Used jquery to make navlink active
-	$('[data-active]').on('click', function (event) {
-		let navId = $(this).data('active')
-		let $this = $(this)
+	// Navlink active
+	const links = document.querySelectorAll('.nav-link')
 
-		$('#my-nav a').removeClass('nav-active')
-		$this.addClass('nav-active')
+	links.forEach(link => {
+		link.addEventListener('click', () => {
+			clearActive()
+			link.classList.add('nav-active')
+		})
 	})
+
+	function clearActive() {
+		links.forEach(link => link.classList.remove('nav-active'))
+	}
 })
